@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сергей Былинкин | Профессиональный фотограф</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="icons/camera.svg">
+</head>
+<body>
+    <!-- Навигационное меню -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">AK Фото</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Сергей Былинкин</h1>
+                <h2>Профессиональный фотограф</h2>
+                <p>Ловлю моменты, создаю историю. Свадьбы, портреты.</p>
+                <a href="#contacts" class="btn">Заказать съёмку</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/my-photo.jpg" alt="Сергей Былинкин - фотограф" class="my-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Привет! Меня зовут Сергей, и вот уже 7 лет я профессионально занимаюсь фотографией. Для меня фотография — это не просто картинка, это эмоция, застывшая во времени, история, которую можно пересматривать снова и снова.</p>
+                    <p>Я специализируюсь на свадебной и портретной фотографии, но также с удовольствием берусь за коммерческие проекты, репортажи. Работал с брендами одежды, кафе и небольшими производствами.</p>
+                    <p>Мой подход — естественность и внимание к деталям. Я не люблю постановочные кадры, предпочитаю ловить настоящие эмоции. Использую профессиональную технику Canon и Sony, работаю как в студии, так и на выезде.</p>
+                    <p>Уверен, что хорошие фотографии должны быть у каждого — они согревают в трудные моменты и делают счастливые дни ещё ярче.</p>
+                </div>
+                <div class="about-icon">
+                    <img src="icons/camera.svg" alt="Иконка камеры" class="svg-icon">
+                    <p class="icon-text">Профессиональное оборудование</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио / Галерея -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Портфолио</h2>
+            <p class="section-subtitle">Мои последние работы</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/photo1.jpg" alt="Свадебная фотография">
+                    <div class="overlay">Свадьба</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo2.jpg" alt="Портретная съёмка">
+                    <div class="overlay">Портрет</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo3.jpg" alt="Коммерческая съёмка">
+                    <div class="overlay">Коммерция</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo4.jpg" alt="Репортажная фотография">
+                    <div class="overlay">Репортаж</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и форма -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-wrapper">
+                <div class="contact-info">
+                    <h3>Свяжитесь со мной</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Фотографов, 15</p>
+                    <p><a href="tel:+799215842748"><i class="fas fa-phone"></i> +7 999 123-45-67</a></p>
+                    <p><a href="mailto:serg.bylinkin06@gmail.com"><i class="fas fa-envelope"></i> serg.bylinkin06@gmail.com</a></p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 10:00-20:00</p>
+                    <div class="social-links">
+                        <a href="https://id.vk.com/account/#/main" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="https://web.telegram.org/k/#@B6lanckname2" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Форма обратной связи</h3>
+                    <form id="feedback-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Ваш email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Сергей Былинкин. Все права защищены.</p>
+                    <p>Сайт создан с любовью к фотографии</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://id.vk.com/account/#/main" target="_blank"><i class="fab fa-vk"></i></a>
+                    <a href="https://web.telegram.org/k/#@B6lanckname2" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer-contacts">
+                    <p><a href="tel:+79215842748">+7 999 123-45-67</a></p>
+                    <p><a href="mailto:serg.bylinkin06@gmail.com">Serg081206@yandex.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
